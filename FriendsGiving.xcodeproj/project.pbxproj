@@ -14,6 +14,7 @@
 		DF2D15BF29D7FEA5003D4A95 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15BE29D7FEA5003D4A95 /* Friend.swift */; };
 		DF2D15C129D7FFA4003D4A95 /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15C029D7FFA4003D4A95 /* FriendsViewModel.swift */; };
 		DF2D15C329D800A3003D4A95 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15C229D800A3003D4A95 /* DetailView.swift */; };
+		DF2D160E29D8D385003D4A95 /* gobble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF2D160D29D8D385003D4A95 /* gobble.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DF2D15BE29D7FEA5003D4A95 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		DF2D15C029D7FFA4003D4A95 /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
 		DF2D15C229D800A3003D4A95 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DF2D160D29D8D385003D4A95 /* gobble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gobble.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DF2D15BE29D7FEA5003D4A95 /* Friend.swift */,
 				DF2D15C029D7FFA4003D4A95 /* FriendsViewModel.swift */,
 				DF2D15B129D7FDEA003D4A95 /* ListView.swift */,
+				DF2D160C29D8D34B003D4A95 /* Sounds */,
 				DF2D15C229D800A3003D4A95 /* DetailView.swift */,
 				DF2D15B329D7FDEC003D4A95 /* Assets.xcassets */,
 				DF2D15B529D7FDEC003D4A95 /* Preview Content */,
@@ -76,6 +79,14 @@
 				DF2D15B629D7FDEC003D4A95 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF2D160C29D8D34B003D4A95 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DF2D160D29D8D385003D4A95 /* gobble.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				DF2D15B729D7FDEC003D4A95 /* Preview Assets.xcassets in Resources */,
 				DF2D15B429D7FDEC003D4A95 /* Assets.xcassets in Resources */,
+				DF2D160E29D8D385003D4A95 /* gobble.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

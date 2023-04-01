@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import AVKit
 
 
 class FriendsViewModel: ObservableObject {
@@ -15,6 +15,7 @@ class FriendsViewModel: ObservableObject {
     init() {
         
         loadData()
+        SoundManager.instance.playSound()
         
     }
     
@@ -73,11 +74,23 @@ class FriendsViewModel: ObservableObject {
             print("🤬 ERROR: Could not save data. \(error.localizedDescription)")
         }  // do...catch
     }  // func saveData
+     
+}
+
+class SoundManager {
+
+    static let instance = SoundManager()
+    var player: AVAudioPlayer?
     
     
-    
-    
-    
-    
-    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "gobble", withExtension: "mp3") else { return }
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+        } catch {
+            print("🤬 ERROR: Can't play song. \(error.localizedDescription)")
+        }
+    }
 }
