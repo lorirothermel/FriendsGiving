@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DF2D15B029D7FDEA003D4A95 /* FriendsGivingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15AF29D7FDEA003D4A95 /* FriendsGivingApp.swift */; };
-		DF2D15B229D7FDEA003D4A95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15B129D7FDEA003D4A95 /* ContentView.swift */; };
+		DF2D15B229D7FDEA003D4A95 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15B129D7FDEA003D4A95 /* ListView.swift */; };
 		DF2D15B429D7FDEC003D4A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2D15B329D7FDEC003D4A95 /* Assets.xcassets */; };
 		DF2D15B729D7FDEC003D4A95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2D15B629D7FDEC003D4A95 /* Preview Assets.xcassets */; };
+		DF2D15BF29D7FEA5003D4A95 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15BE29D7FEA5003D4A95 /* Friend.swift */; };
+		DF2D15C129D7FFA4003D4A95 /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15C029D7FFA4003D4A95 /* FriendsViewModel.swift */; };
+		DF2D15C329D800A3003D4A95 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2D15C229D800A3003D4A95 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF2D15AC29D7FDEA003D4A95 /* FriendsGiving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendsGiving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2D15AF29D7FDEA003D4A95 /* FriendsGivingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsGivingApp.swift; sourceTree = "<group>"; };
-		DF2D15B129D7FDEA003D4A95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF2D15B129D7FDEA003D4A95 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DF2D15B329D7FDEC003D4A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2D15B629D7FDEC003D4A95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF2D15BD29D7FE4B003D4A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DF2D15BE29D7FEA5003D4A95 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		DF2D15C029D7FFA4003D4A95 /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		DF2D15C229D800A3003D4A95 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		DF2D15AE29D7FDEA003D4A95 /* FriendsGiving */ = {
 			isa = PBXGroup;
 			children = (
+				DF2D15BD29D7FE4B003D4A95 /* Info.plist */,
 				DF2D15AF29D7FDEA003D4A95 /* FriendsGivingApp.swift */,
-				DF2D15B129D7FDEA003D4A95 /* ContentView.swift */,
+				DF2D15BE29D7FEA5003D4A95 /* Friend.swift */,
+				DF2D15C029D7FFA4003D4A95 /* FriendsViewModel.swift */,
+				DF2D15B129D7FDEA003D4A95 /* ListView.swift */,
+				DF2D15C229D800A3003D4A95 /* DetailView.swift */,
 				DF2D15B329D7FDEC003D4A95 /* Assets.xcassets */,
 				DF2D15B529D7FDEC003D4A95 /* Preview Content */,
 			);
@@ -137,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2D15B229D7FDEA003D4A95 /* ContentView.swift in Sources */,
+				DF2D15C129D7FFA4003D4A95 /* FriendsViewModel.swift in Sources */,
+				DF2D15BF29D7FEA5003D4A95 /* Friend.swift in Sources */,
+				DF2D15B229D7FDEA003D4A95 /* ListView.swift in Sources */,
+				DF2D15C329D800A3003D4A95 /* DetailView.swift in Sources */,
 				DF2D15B029D7FDEA003D4A95 /* FriendsGivingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +284,9 @@
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FriendsGiving/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +313,9 @@
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FriendsGiving/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
